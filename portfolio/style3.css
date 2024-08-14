@@ -1,0 +1,42 @@
+/* DARK MODE */
+body.dark-mode{
+    background: #fff;
+    color: black;
+}
+
+body.dark-mode .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background:#decbe3;
+}
+
+body.dark-mode .header .logo{
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    pointer-events: none;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+} 
+
+/* body.black-mode .header .navbar a{
+    display: inline-block;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 35px;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+} */
+

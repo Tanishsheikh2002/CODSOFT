@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myportfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body class="light-mode">
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+
+        <nav class="navbar">
+            <a href="#home" style="--i:1" class="active">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#skill" style="--i:3">Skills</a>
+            <a href="#project" style="--i:4">Projects</a>
+            <a href="#contact" style="--i:5">Contact</a>
+            <a href="#" id="toggle-button"><i class='bx bxs-moon'></i></a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-sci">
+            <a href=""><i class='bx bxl-facebook'></i></a>
+            <a href=""><i class='bx bxl-twitter'></i></a>
+            <a href=""><i class='bx bxl-linkedin'></i></a>
+        </div>
+
+        <div class="home-content">
+            <h1>Hi, I'am </h1>
+            <h1>Tanish Ahmed Sheikh</h1>
+            <h3>Frontend Developer</h3>
+            <p>I am a frontend developer with a strong background in C++ and web development technologies.I have experience working on projects like a Simon game and a Pinterest clone.I'm passionate about building efficient and innovative web solutions, and I am eager to contribute to impactful projects.</p>
+            <a href="#" class="btn">Hire Me</a>
+            <a href="/tanish resume.pdf"  download class="btn" id="resume">Resume</a>
+        </div>
+
+        <div class="home-img">
+            <div class="glowing-circle">
+                <span></span>
+                <span></span>
+                <div class="image">
+                    <img src="img/profile.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="home-img">
+            <div class="glowing-circle">
+                <span></span>
+                <span></span>
+                <div class="image">
+                    <img src="img/profile.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="about-content">
+            <h1 data-aos="fade-right">About Me</h1>
+            <h3 data-aos="fade-left">Frontend Developer</h3>
+            <p data-aos="fade-up"> I am currently a 3rd-year B.Tech student majoring in Computer Science at JECRC University. I completed my 12th grade at Children Senior Secondary School in Kota, where I scored 80%. I have a solid foundation in programming, particularly in C++, and I am skilled in web development. I have developed projects such as a Simon game and a Pinterest clone, which have allowed me to apply my coding skills in practical scenarios. Additionally, I have strong soft skills, including team building and leadership, which I have showed through various group projects and activities.</p>
+        </div>
+    </section>
+
+    <section class="skill" id="skill">
+        <div class="skill-have">
+            <h1>Skills</h1>
+            <li>
+                <h3>C++</h3>
+                <span class="bar"><span class="c" data-aos="fade-right">
+                        <div class="per">60%</div>
+                    </span></span>
+            </li>
+            <li>
+                <h3>HTML</h3>
+                <span class="bar"><span class="html" data-aos="fade-right">
+                        <div class="per">80%</div>
+                    </span></span>
+            </li>
+            <li>
+                <h3>CSS</h3>
+                <span class="bar"><span class="css" data-aos="fade-right">
+                        <div class="per">65%</div>
+                    </span></span>
+            </li>
+            <li>
+                <h3>JavaScript</h3>
+                <span class="bar"><span class="javascript" data-aos="fade-right">
+                        <div class="per">40%</div>
+                    </span></span>
+            </li>
+        </div>
+    </section>
+
+    <section class="project" id="project">
+        <div class="mypro">
+            <h1 data-aos="fade-up">Project</h1>
+            <div class="proimg">
+                <div class="proimg1" data-aos="fade-up">
+                    <img src="img/simon.webp" alt="">
+                    <div class="layer">
+                        <h5>Simon Game</h5>
+                        <p>The Simon game is a classic memory-based game where players are challenged to recall and replicate a sequence of colors and sounds. Each round, the game adds a new element to the sequence, increasing its complexity. I developed the game using HTML, CSS, and JavaScript to create an engaging, interactive experience.</p>
+                    </div>
+                </div>
+                <div class="proimg1" data-aos="fade-up">
+                    <img src="img/pintrest.png" alt="">
+                    <div class="layer">
+                        <h5>Pintrest Clone</h5>
+                        <p>The Pinterest clone is a web application that replicates the core features of Pinterest, allowing users to upload, share, and organize images in collections. I developed the project using HTML, CSS, and JavaScript, focusing on creating an intuitive and responsive user interface.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 data-aos="fade-up">Contact Me</h1>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" data-aos="fade-right">
+                <input type="email" placeholder="Email Address" data-aos="fade-left">
+            </div> 
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number" data-aos="fade-right">
+                <input type="text" placeholder="Email Subject" data-aos="fade-left">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" data-aos="fade-up"></textarea>
+            <a href="#" id="submit-btn" class="btn" data-aos="fade-up">Submit</a>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by @tanishahmedsheikh | All Right Reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
