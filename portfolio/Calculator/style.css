@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif ;
+    color: white;
+    
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff5fe7, #feb47b, #608cdf, #91eac9);
+    background-size: 800% 800%;
+    animation: gradientAnimation 15s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    width:25rem;
+    height: 35rem;
+    background: #00000073; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+
+input{
+    background: rgb(26 26 26);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    height: 15%;
+    text-align: right;
+    font-size: 3rem;
+    padding-right: 20px;
+    border-style: none;
+    border-radius: 10px;
+}
+.a{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border-style: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: #292929;
+    transition: transform 0.3s ease;
+}
+button:hover{
+    transform: scale(0.9);
+}
+.button1{
+    background: rgb(26 26 26);
+}
+.button2{
+    background-color: #ff2a00;
+}
+
+button.active {
+    background-color: #555; /* Change color when click */
+    transition: background-color 0.2s ease;
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
